@@ -1,0 +1,78 @@
+﻿$(function(){
+/*
+	顶部导航
+*/
+	//顶部导航加上子菜单类名
+	$('.header .nav li').has('.items').addClass('hasitems');
+
+	//顶部导航绑定鼠标事件
+	$('.header .nav li').on('mouseover',function(){
+		$('.header .nav li').removeClass('act');
+		$(this).addClass('act');
+	}).on('mouseleave',function() {
+		$('.header .nav li').removeClass('act');
+	});
+
+	//顶部导航LOGO下拉菜单
+	$('.header .logo').on('mouseover',function(){
+		$(this).addClass('act');
+	}).on('mouseleave',function(){
+		$(this).removeClass('act');
+	});
+	$('.header .logo .search-list').on('mouseover',function(){
+		$(this).parent('.logo').addClass('act');
+	});
+
+	//地区分站下拉菜单
+	$('.areasite').on('mouseover',function(){
+		$(this).addClass('act');
+	}).on('mouseleave',function(){
+		$(this).removeClass('act');
+	});
+
+	/*
+		导航下搜索
+	*/
+		$('.header .search-top .search-box .s-cate').on('mouseover',function(){
+			$(this).find('div').fadeIn('fast');
+		}).on('mouseleave',function(){
+			$(this).find('div').hide();
+		}).on('click','li',function(){
+			$(this).siblings('li').removeClass('act');
+			$(this).addClass('act');
+			$(this).parents('.s-cate').find('span').html($(this).text()+'<em></em>');
+			$(this).parents('.s-cate').find('div').hide();
+		});
+		$('.header .search-top .search-box form .s-txt').on('click',function(e){
+			e.stopPropagation();
+			if($('.header .search-top .search-box .s-cate .act').index()===0) {
+				$('.header .search-top .search-box .search-list').slideDown();
+			}
+		});
+		$(document).on('click',function(){
+			backNormal();
+		});
+		function backNormal() {
+			$('.nav-search-bar').removeClass('expend');
+			$('.qqlogin, .userlogin').show();
+			$('.header .search-top .search-box .search-list').slideUp();
+		}
+	/*
+	
+	/*
+		返回顶部按钮
+	*/
+	$('.quick-fix-nav .backtop').on('click',function(){
+		$('html,body').animate({scrollTop:0},1000);
+	});
+	$(window).on('scroll',function(){
+		if($(window).scrollTop() > $(window).height()) {
+			$('.quick-fix-nav .backtop').fadeIn().css('display','block');
+		} else {
+			$('.quick-fix-nav .backtop').fadeOut();
+		}
+	});
+        //提示信息
+    console.log("您好，欢迎你访问0370house.com！\n看到这段话，说明你至少是个前端或者相关开发人员。\n如果你发现了网站页面的bug或者某个功能存在问题，可以发邮件反馈到1198832790@qq.com。");
+
+});

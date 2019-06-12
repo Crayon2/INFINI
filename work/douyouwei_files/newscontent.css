@@ -1,0 +1,1125 @@
+﻿/* css reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:link {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+body {
+    font: normal normal 12px/24px "Microsoft YaHei", "微软雅黑";
+    background-color: #eee;
+    /*	behavior: url(../../PIE-1.0.0/PIE.htc);*/
+}
+
+
+/*ie6 hack为了除了滚动时闪动问题*/
+
+*html,
+*html body {
+    background-image: url(about:blank);
+    background-attachment: fixed;
+}
+
+
+/* tongsheng design */
+
+
+/*
+
+ *
+
+ *
+
+	SECTION >>> ads-banner
+
+ *
+
+ */
+
+.ads-wrap {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 10px auto 0;
+}
+
+.ads-wrap .banner {
+    height: 60px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ads-wrap .banner span {
+    /*content:"广告";*/
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(../../images/news/newsads_icon.png) no-repeat center center;
+    width: 24px;
+    height: 24px;
+    /*background-color:#000; background-color:rgba(0,0,0,0.5);*/
+    padding: 0 10px;
+    font: normal normal 12px/20px "宋体", "SimSun";
+    color: #fff;
+    border-radius: 0 4px 0 0;
+}
+/*
+    breadcrum面包屑导航
+*/
+.breadcrum {
+    width: 1200px;
+    min-width: 1200px;
+    margin: -5px auto -10px;
+    font: normal normal 12px/25px "Microsoft YaHei","微软雅黑";
+    color: #999;
+}
+.breadcrum a {
+    color: #999;
+    font: normal normal 12px/25px "Microsoft YaHei","微软雅黑";
+}
+.breadcrum a:hover {
+    color: #d30000;
+}
+.content {
+    width: 1200px;
+    margin: 20px auto 0;
+}
+
+.content:after {
+    content: '';
+    clear: both;
+    visibility: hidden;
+    display: block;
+    height: 0;
+}
+
+.content {
+    zoom: 1;
+}
+
+
+/*
+
+ *
+
+ *
+
+	SECTION >>> content-news
+
+ *
+
+ *
+
+ */
+
+.content-news {
+    width: 875px;
+    float: left;
+    background-color: #fff;
+}
+
+.content-news .inner {
+    border: 1px solid #d3d3d3;
+    padding-bottom: 50px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.content-news .inner:hover {
+    box-shadow: 0 0 3px #aaa;
+}
+
+.content-news .content-nav-house {
+    position: relative;
+    height: 39px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: -15px;
+}
+
+.content-news .content-nav-house h3 {
+    background-color: #d60000;
+    position: relative;
+    top: -5px;
+    left: -16px;
+    height: 45px;
+    float: left;
+}
+
+.content-news .content-nav-house h3 a {
+    font: normal normal 18px/45px "Microsoft YaHei", "微软雅黑";
+    color: #fff;
+    display: block;
+    height: 45px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.content-news .content-nav-house h3 a:hover {
+    text-shadow: 2px 2px 1px #a10000;
+    color: #ffe;
+}
+
+.content-news .content-nav-house h3 em {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    display: block;
+    border-style: solid;
+    border-color: #a60000 #a60000 transparent transparent;
+    border-width: 4px 8px 4px 8px;
+    content: "";
+}
+
+.content-news .content-nav-house ul {
+    float: left;
+    margin-left: -10px;
+}
+
+.content-news .content-nav-house ul li {
+    float: left;
+}
+
+.content-news .content-nav-house ul li a {
+    display: block;
+    border-left: 1px solid #ccc;
+    font: normal normal 14px/14px "Microsoft YaHei", "微软雅黑";
+    color: #999;
+    padding: 0 15px;
+    margin-top: 13px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.content-news .content-nav-house ul li.fst a {
+    border: none;
+}
+
+.content-news .content-nav-house ul li a:hover,
+.content-news .content-nav-house ul li.cur a {
+    color: #d30000;
+}
+
+.content-news .content-nav-house > span {
+    float: right;
+    font: normal normal 12px/40px "Microsoft YaHei", "微软雅黑";
+    color: #999;
+}
+
+.content-news .content-nav-house > span em {
+    font-style: normal;
+    color: #d60000;
+    padding-left: 5px;
+    padding-right: 30px;
+}
+
+.content-news .content-article {
+    width: 700px;
+    margin: 20px auto 0;
+    padding-top: 20px;
+    -webkit-font-smoothing: antialiased;
+    /*chrome、safari*/
+    -moz-osx-font-smoothing: grayscale;
+    /*firefox*/
+}
+
+.content-news .content-article h2 {
+    font: normal normal 26px/40px "Microsoft YaHei", "微软雅黑";
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.content-news .content-article .article-info-top {
+    padding: 5px 0 15px;
+    border-bottom: 1px dotted #ccc;
+    zoom: 1;
+}
+
+.content-news .content-article .article-info-top:after {
+    content: "";
+    clear: both;
+    visibility: hidden;
+    display: block;
+    height: 0;
+}
+
+.content-news .content-article .article-info-top > span {
+    float: left;
+    font: normal normal 12px/24px "Microsoft YaHei", "微软雅黑";
+    color: #666;
+}
+
+.content-news .content-article .article-info-top > div {
+    float: right;
+}
+
+.content-news .content-article .article-info-top .hits {
+    float: left;
+    padding-left: 30px;
+    margin-right: 10px;
+    background: url(../../images/news/collection_icon.png) no-repeat 9px 7px;
+    color: #666;
+}
+
+.content-news .content-article .article-info-top .share-slim {
+    float: left;
+    cursor: pointer;
+    color: #666;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.content-news .content-article .article-info-top .share-slim span {
+    padding-left: 30px;
+    padding-right: 10px;
+    border-radius: 5px;
+    display: block;
+    background: url(../../images/news/collection_icon.png) no-repeat 9px -36px;
+}
+
+.content-news .content-article .article-info-top .share-slim:hover {
+    background-color: #ddd;
+}
+
+.content-news .content-article .article-info-top .share-slim.unfold {
+    background-color: #ddd;
+}
+
+.content-news .content-article .article-info-top .share-slim:active {
+    background-color: #f90;
+}
+
+.content-news .content-article .article-info-top .share-slim:active span {
+    background-position: -63px -36px;
+    color: #fff;
+}
+
+.content-news .content-article .article-wrap {
+    margin-top: 15px;
+    font: normal normal 16px/28px "Microsoft YaHei", "微软雅黑";
+    color: #222;
+}
+
+.content-news .content-article .article-wrap p {
+    text-indent: 2em;
+    margin-top: 15px;
+}
+
+.content-news .content-article .article-wrap p img {
+    display: block;
+    margin: 15px auto 0px !important;
+}
+
+.content-news .content-article .article-wrap table {
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+    margin: 15px auto 0;
+    line-height: 20px;
+}
+
+.content-news .content-article .article-wrap table tr td span {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.content-news .content-article .article-wrap p a.p_wordlink {
+    color: #d30000;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.content-news .content-article .article-wrap p a.p_wordlink:hover {
+    text-shadow: 0px 3px 0px #ddd;
+}
+
+.content-news .content-article .house-card {
+    width: 580px;
+    margin: 15px auto;
+    background-color: #f3f3f3;
+    border: 1px solid #bcbcbc;
+    overflow: hidden;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.content-news .content-article .house-card > a {
+    float: left;
+    display: block;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px dotted #ccc;
+}
+
+.content-news .content-article .house-card > a img {
+    display: block;
+    width: 140px;
+    height: 107px;
+}
+
+.content-news .content-article .house-card .house-card-info h3 a.house-card-tuan {
+    display: block;
+    background-color: #d10504;
+    color: #fff;
+    padding: 0 5px;
+    margin: 0;
+    border: none;
+    font: normal normal 12px/20px "Microsoft YaHei", "微软雅黑";
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.content-news .content-article .house-card .house-card-info {
+    float: left;
+    width: 415px;
+}
+
+.content-news .content-article .house-card .house-card-info em {
+    font-style: normal;
+}
+
+.content-news .content-article .house-card .house-card-info h3 {
+    overflow: hidden;
+}
+
+.content-news .content-article .house-card .house-card-info h3 a {
+    font: normal normal 16px/24px "Microsoft YaHei", "微软雅黑";
+    color: #d30000;
+    float: left;
+}
+
+.content-news .content-article .house-card .house-card-info h3 em {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font: normal normal 12px/18px "Microsoft YaHei", "微软雅黑";
+    margin-top: 3px;
+    color: #c60;
+}
+
+.content-news .content-article .house-card .house-card-info p {
+    color: #555;
+    font: normal normal 12px/24px "Microsoft YaHei", "微软雅黑";
+}
+
+.content-news .content-article .house-card .house-card-info p em {
+    padding-right: 5px;
+}
+
+.content-news .content-article .house-card .house-card-info p.house-card-nav a {
+    color: #555;
+    float: left;
+    font: normal normal 12px/24px "Microsoft YaHei", "微软雅黑";
+    ;
+}
+
+.content-news .content-article .house-card .house-card-info p.house-card-nav a:hover {
+    color: #d30000;
+}
+
+.content-news .content-article .house-card .house-card-info p.house-card-nav em {
+    float: left;
+    padding-right: 0px;
+    margin: 11px 8px 0;
+    background-color: #aaa;
+    height: 1px;
+    width: 5px;
+}
+
+.content-news .content-article .article-info-bottom {
+    color: #888;
+    margin-top: 30px;
+    zoom: 1;
+}
+
+.content-news .content-article .article-info-bottom:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.content-news .content-article .article-info-bottom > span {
+    float: left;
+}
+
+.content-news .content-article .article-info-bottom .share-pro {
+    float: right;
+    width: 195px;
+    padding-top: 20px;
+}
+
+.content-news .content-article .article-info-bottom .share-pro span {
+    display: block;
+    float: left;
+    line-height: 30px;
+    height: 28px;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox a {
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 28px;
+    float: left;
+    background: url(../../images/news/sharebg.gif) no-repeat scroll 0 0 !important;
+    display: block;
+    height: 28px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 36px !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox .bds_tsina {
+    background-position: 0 0 !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox .bds_qzone {
+    background-position: 0 -38px !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox .bds_tqq {
+    background-position: 0 -76px !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox a.bds_weixin {
+    background-position: 0 -114px !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox a.bds_tsina:hover {
+    background-position: 0 -152px !important;
+    opacity: 1 !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox a.bds_qzone:hover {
+    background-position: 0 -190px !important;
+    opacity: 1 !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox a.bds_tqq:hover {
+    background-position: 0 -228px !important;
+    opacity: 1 !important;
+}
+
+.content-news .content-article .article-info-bottom .share-pro .bdsharebuttonbox a.bds_weixin:hover {
+    background-position: 0 -267px !important;
+    opacity: 1 !important;
+}
+
+.content-news .content-article .cautions {
+    font: normal normal 12px/22px "Microsoft YaHei", "微软雅黑";
+    color: #888;
+    text-indent: 2em;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.content-news .content-relative-news {
+    width: 700px;
+    margin: 40px auto 0;
+}
+
+.content-news .content-relative-news .tit {
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.content-news .content-relative-news .tit h4 {
+    float: left;
+    font: normal normal 18px/30px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+    border-bottom: 1px solid #d30000;
+    padding: 0 2px;
+}
+
+.content-news .content-relative-news .tit > a {
+    float: right;
+    font: normal normal 12px/20px "Microsoft YaHei", "微软雅黑";
+    color: #f60;
+    margin-top: 5px;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.content-news .content-relative-news .tit > a:hover {
+    color: #d30000;
+    background-color: #ddd;
+}
+
+.content-news .content-relative-news .tit > a:active {
+    background-color: #f90;
+    color: #fff;
+}
+
+.content-news .content-relative-news ul li {
+    padding-left: 16px;
+    background: url(../../images/news/collection_icon.png) no-repeat 0px -79px;
+}
+
+.content-news .content-relative-news ul li a {
+    font: normal normal 14px/30px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+}
+
+.content-news .content-relative-news ul li span {
+    float: right;
+    font: normal normal 14px/30px Arial, "Microsoft YaHei", "微软雅黑";
+    color: #666;
+}
+
+.content-news .content-relative-news ul li:hover {
+    background-color: #e6e6e6;
+}
+
+.content-news .content-relative-news ul li:hover a {
+    color: #d30000;
+    text-decoration: underline;
+}
+
+.content-news .content-relative-news ul li a:hover {
+    color: #d30000;
+    text-decoration: underline;
+}
+
+.content-news .content-own-business {
+    width: 700px;
+    margin: 20px auto 0;
+}
+
+.content-news .content-own-business .tit {
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.content-news .content-own-business .tit h4 {
+    float: left;
+    border-bottom: 1px solid #d30000;
+    padding: 0 2px;
+}
+
+.content-news .content-own-business .tit h4 a {
+    display: block;
+    font: normal normal 18px/30px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+}
+
+.content-news .content-own-business .tit > a {
+    float: right;
+    font: normal normal 12px/20px "Microsoft YaHei", "微软雅黑";
+    color: #f60;
+    margin-top: 5px;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.content-news .content-own-business .tit > a:hover {
+    color: #d30000;
+    background-color: #ddd;
+}
+
+.content-news .content-own-business .tit > a:active {
+    background-color: #f90;
+    color: #fff;
+}
+
+.content-news .content-own-business .houselist {
+    overflow: hidden;
+    margin-right: -20px;
+}
+
+.content-news .content-own-business .houselist > div {
+    float: left;
+    margin-right: 20px;
+    width: 160px;
+    overflow: hidden;
+}
+
+.content-news .content-own-business .houselist > div > a {
+    display: block;
+    position: relative;
+}
+
+.content-news .content-own-business .houselist > div > a img {
+    display: block;
+    width: 160px;
+    height: 120px;
+    background-color: #ccc;
+}
+
+.content-news .content-own-business .houselist > div > a span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    font: normal normal 12px/24px "Microsoft YaHei", "微软雅黑";
+    color: #fff;
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#3F000000, endColorstr=#BF000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0,startColorstr=#3F000000,endColorstr=#BF000000)";
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+    text-indent: 4px;
+}
+
+.content-news .content-own-business .houselist > div p a {
+    display: block;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    font: normal bold 12px/24px "Microsoft YaHei", "微软雅黑";
+    color: #d30000;
+}
+
+.content-news .content-own-business .houselist > div p span {
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    font: normal normal 12px/20px "Microsoft YaHei", "微软雅黑";
+    color: #999;
+}
+
+
+/*分页*/
+
+.p_bar {
+    clear: both;
+    text-align: center;
+}
+
+.p_bar a {
+    line-height: 36px;
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0 14px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.p_bar .p_curpage,
+.p_bar a:hover {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #e43;
+    background: #e43;
+}
+
+
+/*
+
+ *
+
+ *
+
+	SECTION >>> content-right
+
+ *
+
+ *
+
+ */
+
+.content-side {
+    width: 300px;
+    float: right;
+}
+
+.content-side .ads-slide {
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.content-side .ads-slide:hover {
+    box-shadow: 0 0 3px #aaa;
+}
+
+.content-side .ads-slide .ads-list {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content-side .ads-slide .ads-list > div {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.content-side .ads-slide .ads-list > div a {
+    display: block;
+}
+
+.content-side .ads-slide .ads-list > div img {
+    background: #ccc;
+    width: 300px;
+    height: 400px;
+    display: block;
+    overflow: hidden;
+}
+
+.content-side .ads-slide > ul {
+    position: absolute;
+    overflow: hidden;
+    list-style: none;
+    right: 10px;
+    bottom: 10px;
+}
+
+.content-side .ads-slide > ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #999;
+    text-indent: -9999px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.content-side .ads-slide > ul li.act {
+    background-color: #fff;
+}
+
+.content-side .ads-slide > span {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: transparent url(../../images/news/newsads_icon.png) no-repeat center center;
+    width: 24px;
+    height: 24px;
+    padding: 0 10px;
+    font: normal normal 12px/20px "宋体", "SimSun";
+    color: #fff;
+    border-radius: 0 4px 0 0;
+}
+
+.content-side .side-news-rank,
+.content-side .side-house-recom,
+.content-side .side-house-online {
+    border: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.content-side .side-news-rank:hover,
+.content-side .side-house-recom:hover,
+.content-side .side-house-online:hover {
+    box-shadow: 0 0 3px #aaa;
+}
+
+.content-side .side-news-rank .tit,
+.content-side .side-house-recom .tit,
+.content-side .side-house-online .tit {
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-side .side-news-rank .tit h4,
+.content-side .side-house-recom .tit h4,
+.content-side .side-house-online .tit h4 {
+    float: left;
+    border-bottom: 1px solid #d30000;
+    padding: 0 5px;
+    font: normal normal 16px/30px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+}
+
+.content-side .side-news-rank .tit ul,
+.content-side .side-house-recom .tit ul {
+    float: right;
+    background-color: #bbb;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.content-side .side-news-rank .tit ul li,
+.content-side .side-house-recom .tit ul li {
+    float: left;
+    color: #333;
+    font: normal normal 12px/18px "Microsoft YaHei", "微软雅黑";
+    height: 18px;
+    border-radius: 3px;
+    padding: 0 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    -moz-transition: all 0.3s;
+    /* Firefox 4 */
+    -webkit-transition: all 0.3s;
+    /* Safari 和 Chrome */
+    -o-transition: all 0.3s;
+    /* Opera */
+    -ms-transition: all 0.3s;
+}
+
+.content-side .side-news-rank .tit ul li.act,
+.content-side .side-house-recom .tit ul li.act {
+    background-color: #d60;
+    color: #fff;
+}
+
+.content-side .side-news-rank .news-rank-list ul {
+    padding-top: 5px;
+}
+
+.content-side .side-news-rank .news-rank-list ul li {
+    overflow: hidden;
+    height: 28px;
+    font: normal normal 12px/28px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+}
+
+.content-side .side-news-rank .news-rank-list ul li:hover {
+    background: #f3f3f3;
+}
+
+.content-side .side-news-rank .news-rank-list ul li em {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 7px;
+    font-style: normal;
+    background-color: #aaa;
+    color: #fff;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.content-side .side-news-rank .news-rank-list ul li.top-three em {
+    background-color: #d30000;
+}
+
+.content-side .side-news-rank .news-rank-list ul li a {
+    float: left;
+    font: normal normal 12px/28px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    /* Firefox 4 */
+    -webkit-transition: all 0.2s;
+    /* Safari 和 Chrome */
+    -o-transition: all 0.2s;
+    /* Opera */
+    -ms-transition: all 0.2s;
+    width: 250px;
+}
+
+.content-side .side-news-rank .news-rank-list ul li a:hover {
+    color: #d30000;
+    text-decoration: underline;
+}
+
+.content-side .side-house-recom .house-recom-head {
+    background-color: #e6e6e6;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.content-side .side-house-recom .house-recom-head .cols-1 {
+    float: left;
+    width: 110px;
+}
+
+.content-side .side-house-recom .house-recom-head .cols-2 {
+    float: left;
+    width: 55px;
+}
+
+.content-side .side-house-recom .house-recom-head .cols-3 {
+    float: left;
+    width: 78px;
+}
+
+.content-side .side-house-recom .house-recom-head .cols-4 {
+    float: left;
+    width: 35px;
+    text-align: right;
+}
+
+.content-side .side-house-recom .house-recom-list ul li {
+    overflow: hidden;
+    height: 28px;
+}
+
+.content-side .side-house-recom .house-recom-list ul li:hover {
+    background: #f3f3f3;
+}
+
+.content-side .side-house-recom .house-recom-list ul li a {
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    /* Firefox 4 */
+    -webkit-transition: all 0.2s;
+    /* Safari 和 Chrome */
+    -o-transition: all 0.2s;
+    /* Opera */
+    -ms-transition: all 0.2s;
+}
+
+.content-side .side-house-recom .house-recom-list ul li a:hover {
+    color: #d30000;
+}
+
+.content-side .side-house-recom .house-recom-list ul li .cols-1 {
+    float: left;
+    width: 110px;
+    color: #333;
+    font: normal normal 12px/28px "Microsoft YaHei", "微软雅黑";
+}
+
+.content-side .side-house-recom .house-recom-list ul li .cols-2 {
+    float: left;
+    width: 60px;
+    color: #333;
+    font: normal normal 12px/28px "Microsoft YaHei", "微软雅黑";
+}
+
+.content-side .side-house-recom .house-recom-list ul li .cols-3 {
+    float: left;
+    width: 54px;
+    text-align: right;
+    color: #333;
+    font: normal normal 12px/28px "Microsoft YaHei", "微软雅黑";
+}
+
+.content-side .side-house-recom .house-recom-list ul li .cols-4 {
+    float: left;
+    width: 54px;
+    text-align: right;
+    color: #333;
+    font-style: normal;
+    font: normal normal 12px/28px "Microsoft YaHei", "微软雅黑";
+}
+
+.content-side .side-house-online .tit a {
+    color: #333;
+}
+
+.content-side .side-house-online .tit em {
+    font: normal normal 12px/30px "Microsoft YaHei", "微软雅黑";
+    float: right;
+    color: #f60;
+}
+
+.content-side .side-house-online .tuanlist > div {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.content-side .side-house-online .tuanlist > div > div {
+    float: right;
+}
+
+.content-side .side-house-online .tuanlist > div > a {
+    display: block;
+}
+
+.content-side .side-house-online .tuanlist > div > a img {
+    width: 278px;
+    height: 165px;
+    display: block;
+    background-color: #ccc;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-top {
+    float: left;
+    overflow: hidden;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-top a {
+    font: normal normal 16px/25px "Microsoft YaHei", "微软雅黑";
+    color: #333;
+    float: left;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-top a:hover {
+    color: #d30000;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-top span {
+    font: normal normal 12px/25px "Microsoft YaHei", "微软雅黑";
+    float: right;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-bottom {
+    overflow: hidden;
+    width: 278px;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-bottom a {
+    float: right;
+    background-color: #f60000;
+    font: normal normal 14px/25px "Microsoft YaHei", "微软雅黑";
+    color: #fff;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-bottom a:hover {
+    background-color: #e30000;
+}
+
+.content-side .side-house-online .tuanlist > div p.tuan-info-bottom span {
+    float: left;
+}

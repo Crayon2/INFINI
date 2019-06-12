@@ -1,0 +1,194 @@
+html{overflow-x: hidden;
+background: #f2f2f2;}
+body {
+ 	height: auto;
+ 	width: 100%;
+ }
+ header {
+ 	position: fixed;
+	width: 100%;
+	z-index: 222;
+	height: 92px;
+	top: 0;
+ 	_position:absolute; 
+ 	_margin-top: 0; 
+ 	_top:expression(documentElement.scrollTop);
+}
+ .top {
+ 	vertical-align: top;
+ 	background: rgb(0, 0, 0);
+ 	height: 75px;
+ 	width: 100%;
+ 	opacity: 0.75;
+ 	filter: alpha(opacity=75);
+ 	padding-top: 15px;
+ 	position: relative;
+ 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+ 	text-align: center;
+ 	padding-bottom: 10px;
+ } 
+ .logo {
+ 	height: 44px;
+ 	width: 136px;
+ 	margin: 0px auto;
+	text-align: center;
+ }
+ .bar {
+ 	position: absolute;
+ 	color: #8e8e8e;
+ 	font-size: 0.9em;
+ 	bottom: 5px;
+ 	font-family: HUM521L;
+ 	width: 100%;
+	    text-align: center;
+ }
+ nav {
+ 	width: 80%;
+ 	text-align: center;
+ 	margin: auto;
+ 	min-width: 320px;
+ } 
+ nav a {
+ 	color: #898989;
+ 	text-decoration: none;
+ 	margin-left: 11%;
+ }
+ nav a:hover {
+ 	color: white;
+ }
+ .introduction{
+	 width:100%;
+	margin-top: 50px;
+	text-indent: 2em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-top: 1px #e8e8e8 solid;
+	border-bottom: 1px #e8e8e8 solid;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #666666;
+	font-family:STKaiti;
+}
+aside{ 
+	 width:100%;
+	margin: 2% auto;
+	padding-left:5%;
+	overflow: hidden;
+}
+section{width:100%;overflow: hidden;}
+span img{
+	width: 4.8%;
+	margin: 0.7%;
+	min-width: 35px;
+}
+figure{
+	width: 31%;
+	border-radius: 8px;
+	background: white;
+	float: left;
+	margin: 1.5% 1%;
+	color: #959595;
+	text-decoration: none;
+	box-shadow: 2px 2px 2px #e3e3e3;
+	position: relative;
+	display: inline-block;
+}
+figcaption {
+	clear: both;
+	text-align: center;
+	line-height: 35px;
+	font-size: 0.98em;
+	color: #666666;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	}
+img {
+	width: 100%;
+	
+    border-radius: 8px 8px 0px 0px;
+   }
+@media screen and (max-width: 1200px){
+
+header{height: 78px;
+}}
+.logo{width: 110px;height: 32px}
+.introduction{font-size: 1em}
+}
+@media screen and (max-width: 641px) {
+figcaption{line-height: 25px; }
+.introduction{font-size: 0.9em}
+}
+@media screen and (max-width: 480px){
+figure:nth-child(n) {
+	width: 48%;
+	margin-top: 2%;
+	margin-left: 4%;
+	margin-right: 0;
+}
+figure:nth-child(2n+1) {
+	width: 48%;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 0;
+}
+span img{
+	margin: 0 6px;}
+}
+figure:hover {   
+	box-shadow: inset 0 -3px 0 #cc3232;
+}
+   .block{height:130px;
+          width:100%}
+   .message {
+    background: rgb(0,0,0);
+    position: absolute;
+	bottom: 0;
+    z-index: 22;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.message p {
+    width: 100%;
+    text-align: center;
+    color: #f2f2f2;}
+.device {
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+.picuture{
+	padding:0px 10px ;
+	position:relative;
+}
+
+footer {
+	width:100%;
+	background-color: #E0E0E0;
+text-align: center;
+}
+.footerup{
+ margin:0px; 
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.footerdown{
+ margin:0px;
+ border-left: 30px solid #E0E0E0;
+
+ }
+.footerlogo{
+ margin-left: 5px;
+width:30px;
+ height:25px;
+}
+footer p{color: #666666;
+font-family: "微软雅黑";
+    text-shadow: 1px 1px 1px white;}
+ .footerlogo2{
+  text-align: center;
+  width: 120px;}

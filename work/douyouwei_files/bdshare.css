@@ -1,0 +1,106 @@
+.share-slim .bdsharebuttonbox {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+.share-slim .bdsharebuttonbox > a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 1px;
+	height: 1px;
+	z-index: 20;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s; 
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.share-slim .bdsharebuttonbox > a.bds_tsina {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s; 
+	background-image: url(../../images/news/sina.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.share-slim .bdsharebuttonbox > a.bds_qzone {
+	-webkit-transition: all 0.2s 0.08s;
+	-moz-transition: all 0.2s 0.08s;
+	-o-transition: all 0.2s 0.08s;
+	-ms-transition: all 0.2s 0.08s;
+	transition: all 0.2s 0.08s; 
+	background-image: url(../../images/news/qzone.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.share-slim .bdsharebuttonbox > a.bds_tqq {
+	-webkit-transition: all 0.2s 0.16s;
+	-moz-transition: all 0.2s 0.16s;
+	-o-transition: all 0.2s 0.16s;
+	-ms-transition: all 0.2s 0.16s;
+	transition: all 0.2s 0.16s; 
+	background-image: url(../../images/news/qq.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	top: 24px;
+}
+.share-slim .bdsharebuttonbox > a.bds_weixin {
+	-webkit-transition: all 0.2s 0.24s;
+	-moz-transition: all 0.2s 0.24s;
+	-o-transition: all 0.2s 0.24s;
+	-ms-transition: all 0.2s 0.24s;
+	transition: all 0.2s 0.24s; 
+	background-image: url(../../images/news/weixin.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	top: 24px;
+}
+.share-slim.unfold .bdsharebuttonbox > a.bds_tsina {
+	left: -40px;
+	top: -60px;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.share-slim.unfold .bdsharebuttonbox > a.bds_qzone {
+	left: 0px;
+	top: -35px;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.share-slim.unfold .bdsharebuttonbox > a.bds_tqq {
+	left: 15px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.share-slim.unfold .bdsharebuttonbox > a.bds_weixin {
+	left: 2px;
+	top: 55px;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.share-slim.unfold .bdsharebuttonbox > a:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}

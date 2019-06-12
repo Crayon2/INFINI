@@ -1,0 +1,28 @@
+$(function(){
+/*
+	新分享按钮形式
+*/
+	var timetag = null;
+	$('.share-slim span').on('click',function(e){
+		e.stopPropagation();
+		$(this).parent('.share-slim').toggleClass('unfold');
+		clearTimeout(timetag);
+		timetag = setTimeout(function(){
+			$('.share-slim').removeClass('unfold');
+		},4000);
+	});
+	$('.share-slim .bdsharebuttonbox a').on('mouseover',function(){
+		clearTimeout(timetag);
+	}).on('mouseleave',function(){
+		timetag = setTimeout(function(){
+			$('.share-slim').removeClass('unfold');
+		},1000);
+	});
+
+
+	$(document).on('click',function(e){
+		e.stopPropagation();
+		$('.share-slim').removeClass('unfold');
+	});
+
+});
